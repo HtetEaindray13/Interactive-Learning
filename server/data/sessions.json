@@ -1,0 +1,18 @@
+[
+  {
+    "sessionId": "81546fdc-b7ea-41a6-a58f-41429be24f8f",
+    "timestamp": "2026-07-16T14:11:44.621Z",
+    "objective": "give the photo of cat",
+    "questionsAnswered": 0,
+    "totalQuestions": 3,
+    "timeSpentSeconds": 410
+  },
+  {
+    "sessionId": "63d67360-032c-4df3-9b2a-d53996335374",
+    "timestamp": "2026-07-16T14:13:28.943Z",
+    "objective": "parallel circuit",
+    "questionsAnswered": 0,
+    "totalQuestions": 3,
+    "timeSpentSeconds": 6
+  }
+]

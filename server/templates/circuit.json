@@ -1,0 +1,19 @@
+{
+  "id": "circuit_basic",
+  "subject": "physics",
+  "concepts": ["series circuits", "parallel circuits", "resistance", "brightness"],
+  "ageRange": [8, 12],
+  "adjustableVariables": {
+    "circuitType": ["series", "parallel"],
+    "numberOfBulbs": { "min": 1, "max": 4 },
+    "batteryVoltage": { "min": 1.5, "max": 9, "unit": "V" },
+    "resistancePerBulb": { "min": 1, "max": 10, "unit": "ohm" }
+  },
+  "defaultHints": [
+    "What happens to bulb brightness when you add another bulb in series?",
+    "Compare total resistance between series and parallel setups."
+  ],
+  "safetyNotes": [
+    "In a real circuit, short-circuiting a battery can cause overheating — this sim shows why safely."
+  ]
+}
