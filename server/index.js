@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { randomUUID } from 'crypto';
 import configureRouter from './routes/configure.js';
+import { getPublicTemplates } from './templates/templateLibrary.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: join(__dirname, '../.env') });
@@ -30,6 +31,15 @@ function writeSessions(sessions) {
 }
 
 app.use('/api/configure', configureRouter);
+
+app.get('/api/templates', (_req, res) => {
+  try {
+    res.json(getPublicTemplates());
+  } catch (err) {
+    console.error('GET /api/templates error:', err);
+    res.status(500).json({ error: 'Failed to read templates.' });
+  }
+});
 
 app.get('/api/sessions', (_req, res) => {
   try {

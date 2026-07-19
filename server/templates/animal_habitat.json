@@ -1,0 +1,25 @@
+{
+  "id": "animal_habitat_basic",
+  "name": "Animal Habitat Explorer",
+  "description": "Legacy biology habitat scene. Biology now uses 2D photo/diagram material by default because 3D is restricted.",
+  "sceneType": "animal_habitat",
+  "subject": "biology / 2D only",
+  "concepts": ["animals", "habitats", "diet", "ecosystems", "rainforest", "food chains"],
+  "keywords": ["animal", "animals", "habitat", "rainforest", "jungle", "tiger", "monkey", "bird", "toucan", "diet", "food chain", "ecosystem", "biology"],
+  "ageRange": [7, 11],
+  "adjustableVariables": {
+    "habitatType": ["rainforest", "savanna", "wetland"],
+    "climate": ["humid", "dry", "temperate"],
+    "showLabels": [true, false],
+    "difficulty": ["easy", "medium", "hard"],
+    "animals": { "min": 2, "max": 5 }
+  },
+  "defaultHints": [
+    "Which animal is a predator, and which animal eats mostly fruit or leaves?",
+    "What habitat features help these animals survive?",
+    "How would the food chain change if one animal disappeared?"
+  ],
+  "safetyNotes": [
+    "Wild animals should be observed from a safe distance and protected in their natural habitats."
+  ]
+}

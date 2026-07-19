@@ -1,0 +1,38 @@
+{
+  "deniedSubjects": {
+    "biology": {
+      "reason": "Biology 3D generation is disabled by default for this MVP.",
+      "suggestion": "Use a 2D photo or labeled diagram for biology now. You can loosen this policy later for abstract non-figurative biology content."
+    },
+    "history": {
+      "reason": "History is outside the 3D lab roadmap for this MVP.",
+      "suggestion": "Use a 2D timeline, map, source image, or reading material instead of a 3D lab."
+    }
+  },
+  "allowedSubjects": {
+    "physics": {
+      "topics": [
+        {
+          "name": "electric circuits",
+          "templateId": "circuit_basic",
+          "keywords": ["circuit", "electricity", "series", "parallel", "battery", "bulb", "voltage", "resistance", "current"]
+        }
+      ],
+      "notBuiltMessage": "Physics is allowed, but this physics topic does not have a 3D template yet."
+    },
+    "chemistry": {
+      "topics": [],
+      "notBuiltMessage": "Chemistry is allowed, but no chemistry templates are built yet."
+    },
+    "mathematics": {
+      "topics": [
+        {
+          "name": "function graphing",
+          "templateId": "graph_2d",
+          "keywords": ["graph", "slope", "linear", "function", "coordinate", "quadratic", "parabola", "equation", "y ="]
+        }
+      ],
+      "notBuiltMessage": "Mathematics is allowed, but this math topic does not have a template yet."
+    }
+  }
+}

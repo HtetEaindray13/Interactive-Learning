@@ -1,0 +1,22 @@
+{
+  "id": "teaching_material_basic",
+  "name": "Teaching Material Viewer",
+  "description": "Create focused visual teaching material with a real photo, labels, short facts, and a 3D-style view only for subjects where 3D is allowed.",
+  "sceneType": "teaching_material",
+  "subject": "allowed 3D topics",
+  "concepts": ["teaching materials", "visual learning", "labels", "facts", "3d view"],
+  "keywords": ["tiger", "animal", "plant", "planet", "machine", "object", "photo", "label", "teaching", "material", "visual"],
+  "ageRange": [6, 16],
+  "adjustableVariables": {
+    "topic": "teacher-provided topic",
+    "photoUrl": "real photo URL",
+    "labels": { "min": 3, "max": 8 },
+    "facts": { "min": 3, "max": 6 }
+  },
+  "defaultHints": [
+    "Observe the photo and rotate the 3D-style view.",
+    "Use the labels to identify important parts.",
+    "Read the facts to explain the topic in simple language."
+  ],
+  "safetyNotes": []
+}

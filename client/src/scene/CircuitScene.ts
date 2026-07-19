@@ -5,24 +5,9 @@ import {
   parallelResistance,
   bulbBrightness,
 } from './circuitMath';
+import type { CircuitConfig, SceneHandle } from './types';
 
-export interface CircuitConfig {
-  circuitType: 'series' | 'parallel';
-  numberOfBulbs: number;
-  batteryVoltage: number;
-  resistancePerBulb: number;
-  guidingQuestions: string[];
-  narration: string;
-  objective?: string;
-  topic?: string;
-  ageLevel?: string;
-  subject?: string;
-}
-
-export interface CircuitSceneHandle {
-  update: (config: CircuitConfig) => void;
-  dispose: () => void;
-}
+export type { CircuitConfig } from './types';
 
 function createBattery(): THREE.Mesh {
   const geometry = new THREE.BoxGeometry(1.2, 0.6, 0.6);
@@ -128,7 +113,7 @@ function buildCircuit(
 export function initCircuitScene(
   container: HTMLElement,
   config: CircuitConfig
-): CircuitSceneHandle {
+): SceneHandle<CircuitConfig> {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x020617);
 

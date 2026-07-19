@@ -1,0 +1,62 @@
+{
+  "id": "graph_2d",
+  "name": "2D Function Graph Explorer",
+  "description": "Explore linear, quadratic, and trigonometric functions with a flat graph and live controls.",
+  "sceneType": "graph_2d",
+  "subject": "mathematics",
+  "concepts": ["functions", "slope", "coordinates", "graphs"],
+  "keywords": ["graph", "slope", "linear", "function", "coordinate", "quadratic", "parabola", "equation"],
+  "ageRange": [10, 15],
+  "adjustableVariables": {
+    "functionType": {
+      "type": "select",
+      "label": "Function",
+      "options": ["linear", "quadratic", "sine", "cosine"],
+      "default": "linear"
+    },
+    "coefficientA": {
+      "type": "range",
+      "label": "a",
+      "min": -5,
+      "max": 5,
+      "step": 0.5,
+      "default": 1
+    },
+    "coefficientB": {
+      "type": "range",
+      "label": "b",
+      "min": -10,
+      "max": 10,
+      "step": 0.5,
+      "default": 0
+    },
+    "coefficientC": {
+      "type": "range",
+      "label": "c",
+      "min": -10,
+      "max": 10,
+      "step": 0.5,
+      "default": 0
+    },
+    "xMin": {
+      "type": "number",
+      "label": "Minimum x",
+      "min": -20,
+      "max": 0,
+      "step": 1,
+      "default": -10
+    },
+    "xMax": {
+      "type": "number",
+      "label": "Maximum x",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 10
+    }
+  },
+  "defaultHints": [
+    "How does changing a affect the steepness or shape of the graph?",
+    "What changes when b or c moves the graph?"
+  ]
+}

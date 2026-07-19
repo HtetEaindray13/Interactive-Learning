@@ -1,0 +1,25 @@
+{
+  "id": "visual_material_builder",
+  "name": "AI Teaching Material Builder",
+  "description": "Create 2D source-based teaching material with realistic photos, diagrams, labels, facts, vocabulary, classroom prompts, and video searches.",
+  "sceneType": "visual_material",
+  "subject": "all subjects / 2D",
+  "concepts": ["real photos", "trusted sources", "visual learning", "labels", "facts", "vocabulary", "video search"],
+  "keywords": ["photo", "image", "diagram", "video", "videos", "map", "history", "science", "biology", "geography", "physics", "chemistry", "teaching", "material", "source"],
+  "ageRange": [6, 18],
+  "adjustableVariables": {
+    "topic": "teacher-provided topic",
+    "grade": "optional age or grade level",
+    "visualType": "photo | diagram | map | timeline",
+    "facts": { "min": 4, "max": 6 },
+    "labels": { "min": 3, "max": 6 },
+    "sources": { "min": 1, "max": 4 },
+    "videos": { "min": 2, "max": 3 }
+  },
+  "defaultHints": [
+    "Study the real image or diagram first.",
+    "Use the labels to identify important parts.",
+    "Read the facts and vocabulary, then explain the topic in your own words."
+  ],
+  "safetyNotes": []
+}

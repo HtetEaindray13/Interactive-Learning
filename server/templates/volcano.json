@@ -1,0 +1,24 @@
+{
+  "id": "volcano_basic",
+  "name": "Volcano and Earth Layers Lab",
+  "description": "Explore volcano eruptions, magma movement, and Earth's crust, mantle, and core layers.",
+  "sceneType": "volcano",
+  "subject": "geography",
+  "concepts": ["volcanoes", "earth layers", "magma", "lava", "eruption", "plate tectonics"],
+  "keywords": ["volcano", "eruption", "magma", "lava", "crater", "earth", "geography", "geology", "crust", "mantle", "core", "tectonic"],
+  "ageRange": [8, 14],
+  "adjustableVariables": {
+    "eruptionLevel": { "min": 0, "max": 3 },
+    "showLabels": [true, false],
+    "difficulty": ["easy", "medium", "hard"],
+    "focusArea": ["volcano", "earth_layers", "both"]
+  },
+  "defaultHints": [
+    "Where does magma travel before it becomes lava?",
+    "Which Earth layer is the thinnest?",
+    "How does eruption strength change what you observe above the crater?"
+  ],
+  "safetyNotes": [
+    "Real volcanic areas can release heat, ash, and gases. Observe volcanoes only from safe, guided distances."
+  ]
+}

@@ -97,6 +97,8 @@ cd ..
 # 2. Environment
 cp .env.example .env
 # then edit .env:
+# OPENROUTER_API_KEY=your_openrouter_api_key_here
+# OPENROUTER_MODEL=openrouter/free
 # GEMINI_API_KEY=your_key_here
 # GEMINI_MODEL=gemini-3.5-flash
 # PORT=3001
@@ -260,11 +262,15 @@ No dashboard needed for MVP — a simple `GET /api/sessions` endpoint that retur
 - Teacher dashboard showing aggregated class performance across sessions.
 
 
-## 12. Gemini API Key
+## 12. AI API Keys
 
-Store your Gemini API key in `.env` only:
+Store AI API keys in `.env` only. OpenRouter is used first when `OPENROUTER_API_KEY` is present; Gemini is used as a fallback.
 
 ```bash
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+OPENROUTER_MODEL=openrouter/free
+OPENROUTER_SITE_URL=http://localhost:5173
+OPENROUTER_APP_TITLE=Interactive Learning Teaching Builder
 GEMINI_API_KEY=your_key_here
 GEMINI_MODEL=gemini-3.5-flash
 ```
